@@ -1,0 +1,59 @@
+@import url('/styles/primary.css');
+
+header {
+    background-image: url('/assets/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Adjust the height as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.btn-header{
+    background-color: #E4B302;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.btn-header:hover{
+    background-color: #ffffff00;
+    color: #E4B302;
+    border: #E4B302 solid 0.5px;
+    transform: scale(1.1);
+}
+
+.logo-head{
+
+    margin-bottom: 190px;
+}
+
+#sobre-nos h2{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #E4B302;
+}
+
+#sobre-nos p{
+    font-size: 1.2rem;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sobre-nos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text is centered */
+}

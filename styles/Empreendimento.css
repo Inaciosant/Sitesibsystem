@@ -1,0 +1,65 @@
+.col-5-custom {
+    flex: 0 0 20%; /* 100% / 5 = 20% */
+    max-width: 20%;
+    margin-top: 30px;
+}
+
+.card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 900px) and (min-width: 769px) { /* Tablet */
+    .col-5-custom {
+        flex: 0 0 50%; /* 100% / 2 = 50% */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) { /* Tablet */
+    .col-5-custom {
+        flex: 0 0 50%; /* 100% / 2 = 50% */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .col-5-custom {
+        flex: 0 0 100%; /* 100% */
+        max-width: 100%;
+    }
+}
+
+  .btn-primary{
+    background-color: #ffffff00;
+    color: #E4B302;
+    border: #E4B302 solid 0.5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 50px;
+  }
+  .btn-primary:hover{
+    background-color: #E4B302;
+    color: #ffffff;
+    border: none;
+    transform: scale(1.1);
+  }
+
+  #empreendimentos h1{
+    font-weight: bold;
+    color: #E4B302;
+
+
+  }
