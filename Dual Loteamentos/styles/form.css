@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url('/assets/BG.jpg') no-repeat center center fixed;
+    background: url('/assets/bg2.jpg') no-repeat center center fixed;
     background-size: cover;
     
 }
@@ -63,13 +63,20 @@ select {
     padding: 5px;
     cursor: pointer;
 }
-body {
-    margin: 0;
-    padding: 0;
-    background: url('/assets/BG.jpg') no-repeat center center fixed;
-    background-size: cover;
-    
+
+.right {
+    width: 50%;
+    height: 100vh;
+    position: fixed; 
+    top: -10vh;
+    left: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Garante que o logotipo fique acima de outros elementos */
 }
+
+
 
 .left{
     width: 50%;
@@ -130,16 +137,43 @@ label {
 }
 
 select {
-    z-index: 1;
-    height: 4vh;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    width: 50vh;
-    border: none;
-    background-color: white;
+    appearance: none; /* Remove o estilo padrão da seta */
+    -webkit-appearance: none; /* Compatibilidade com navegadores baseados em WebKit */
+    -moz-appearance: none; /* Compatibilidade com Firefox */
+    background-color: #f8f8f8; /* Fundo */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 8px 40px 8px 12px; /* Espaço para a seta */
+    font-family: 'Arial', sans-serif; /* Fonte personalizada */
     font-size: 1em;
-    padding: 5px;
-    cursor: pointer;
+    color: #333; /* Cor do texto */
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Ícone da seta em SVG */
+    background-repeat: no-repeat;
+    background-position: right 12px center; /* Posiciona a seta */
+    background-size: 12px; /* Tamanho da seta */
+}
+
+select:hover {
+    background-color: #e4e4e4; /* Cor de fundo no hover */
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #E4B302; /* Destaque no foco */
+}
+
+
+option {
+    background-color: #fff; /* Fundo das opções */
+    color: #333; /* Cor do texto */
+}
+
+
+
+input{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1em;
 }
 
 @media (max-width: 768px) {
@@ -191,3 +225,5 @@ select {
         margin-top: 15px;
     }
 }
+
+

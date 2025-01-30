@@ -1,0 +1,31 @@
+.status-obra-container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.etapa-card {
+    background: #ffffff; /* Cor de fundo dos cards */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.etapa-nome {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.custom-progress {
+    height: 12px; /* Reduzindo a altura da barra */
+    background-color: #e9ecef; /* Cor do fundo da barra */
+    border-radius: 5px;
+}
+
+.custom-progress .progress-bar {
+    background-color: #4caf50 !important; /* Cor verde para a barra */
+}

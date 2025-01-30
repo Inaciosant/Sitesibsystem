@@ -1,0 +1,43 @@
+h2 {
+    font-size: 44px;
+    font-weight: bold;
+    background-color: transparent !important;
+    margin-top: 5%;
+}
+
+.mapa-container {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.status-card {
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.btn-outline-secondary{
+    border: none!important;
+}
+
+
+.bg-mapa{
+    background: linear-gradient(180deg, #0C4F48, #318A84); /* Gradiente no fundo */
+border-top: 3px solid #4D8B00;
+}
